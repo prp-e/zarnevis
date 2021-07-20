@@ -9,6 +9,7 @@ setup(
     author='Muhammadreza Haghiri',
     author_email='<haghiri75@gmail.com>',
     url='https://github.com/prp-e/zarnevis',
+    license='MIT',
     description='Zarnevis, a tool for writing RTL text in computer vision projects',
     long_description_content_type='text/markdown',
     long_description=long_description,
