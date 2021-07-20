@@ -15,7 +15,7 @@ class Zarnevis:
 
     def draw_text(self):
         text = self.text
-        self.text = arabic_reshaper(text)
+        self.text = arabic_reshaper.reshape(text)
         text = get_display(text)
         font = ImageFont.truetype(self.font_file, size=self.font_size)
         image_array = Image.fromarray(self.image)
