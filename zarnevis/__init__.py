@@ -1,1 +1,1 @@
-from zarnevis import Zarnevis
+from zarnevis.core import Zarnevis
