@@ -1,4 +1,3 @@
-import cv2 
 import arabic_reshaper
 from bidi.algorithm import get_display
 import numpy as np 
@@ -13,7 +12,10 @@ class Zarnevis:
         self.text_coords = text_coords
         self.color = color
 
+
     def draw_text(self):
+        self.text = arabic_reshaper(self.text)
+        self.text = get_display(self.text)
         font = ImageFont.truetype(self.font_file, size=self.font_size)
         image_array = Image.fromarray(self.image)
         draw = ImageDraw.Draw(image_array)
